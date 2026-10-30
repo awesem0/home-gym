@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FF5A1F">
+<meta name="description" content="OSIMO's 12-week home strength programme">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Home Strength">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<title>Home Strength</title>
+</head>
+<body>
+<header class="top">
+  <div><div class="eyebrow" id="hdrWeek"></div><h1 id="hdrTitle">Home Strength</h1></div>
+  <button class="iconbtn" id="btnSettings" aria-label="Settings">Settings</button>
+</header>
+<main>
+  <section class="view" id="v-today"></section>
+  <section class="view" id="v-plan" hidden></section>
+  <section class="view" id="v-library" hidden></section>
+  <section class="view" id="v-log" hidden></section>
+  <section class="view" id="v-progress" hidden></section>
+  <section class="view" id="v-music" hidden></section>
+  <section class="view" id="v-settings" hidden></section>
+</main>
+<div id="mini" class="mini" hidden>
+  <div class="miniframe" id="miniFrame"></div>
+  <div class="minibar"><span id="miniTitle"></span><button class="chip" id="miniToggle">Hide video</button><button class="chip" id="miniStop">Stop</button></div>
+</div>
+<nav class="tabs" id="tabs">
+  <button data-tab="today" class="on">Today</button>
+  <button data-tab="plan">Plan</button>
+  <button data-tab="library">Library</button>
+  <button data-tab="log">Log</button>
+  <button data-tab="progress">Progress</button>
+  <button data-tab="music">Music</button>
+</nav>
+<div id="session" class="session" hidden></div>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" hidden></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
